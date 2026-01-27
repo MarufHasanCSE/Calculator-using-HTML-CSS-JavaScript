@@ -135,6 +135,15 @@ button.equal:active{
 button.clear{
     background: #f44336;
 }
-}button.clear:hover{
+button.clear:hover{
     background: #e53935;
 }
+button.clear:active{
+    background: #d32f2f;
+}   
+button.memory{
+    background: #2196F3;
+}
+button.memory:hover{
+    background: #1e88e5;
+    
