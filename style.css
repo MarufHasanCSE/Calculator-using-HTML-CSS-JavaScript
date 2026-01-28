@@ -40,3 +40,46 @@ input::placeholder {
   color: #ffffff;
 }   
 
+button{
+
+    border: none;
+    width: 65px;
+    height: 65px;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: -5px 7px 15px rgba(255, 255, 4, 0.5);
+    background: transparent;
+    color: #ffffff;     
+    font-family: poppins;
+    font-weight: 600;
+}
+
+.equal{
+    background: #ea8921;
+    box-shadow: 0px 3px 10px rgba(234, 137, 33, 0.5);
+}
+.equal:hover{
+    background: #44d2cf;
+}
+
+button:hover{
+    background: #44d2cf;
+    box-shadow: 0px 3px 10px rgba(68, 210, 207, 0.5);
+}
+.clear{
+    background: #dc2c2c;
+    box-shadow: 0px 3px 10px rgba(255, 0, 0, 0.5);
+}
+.clear:hover{
+    background: #e45392;
+}
+
+.operator{
+    background: #46cf19;
+    box-shadow: 0px 3px 10px rgba(107, 107, 107, 0.5);
+}
+.operator:hover{
+     background: #44d2cf;
+}
