@@ -1,149 +1,19 @@
-*{
-    margin: 0;
-    padding: 0;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300');
+
+
+*{  
+    margin: 0;  
+    padding: 0;  
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
-
 }
+
 body{
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: #f2f2f2;
+    background: linear-gradient(45deg,  rgb(79, 147, 190), rgb(37, 24, 37));
 }
-h1{
-    font-size: 3rem;
-    color: #333;
-}
-
-button{
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    background: #4CAF50;
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-button:hover{
-    background: #45a049;
-}   
-button:active{
-    background: #3e8e41;
-}
-button:disabled{
-    background: #ccc;
-    cursor: not-allowed;
-}
-input{
-    padding: 10px;
-    font-size: 1.2rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-}
-input:focus{
-    border-color: #4CAF50;
-    outline: none;
-}   
-.container{
-    width: 300px;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 10px;
-}
-.result{
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: right;
-}
-.operator{
-    background: #f1f1f1;
-}
-.operator:hover{
-    background: #e1e1e1;
-}
-.operator:active{
-    background: #d1d1d1;
-}
-
-.clear{
-    background: #ff4d4d;
-}
-.clear:hover{
-    background: #e64444;
-}
-.clear:active{
-    background: #cc3c3c;
-}
-.equal{
-    background: #4CAF50;
-}
-.equal:hover{
-    background: #45a049;
-}
-.equal:active{
-    background: #3e8e41;
-}   
-.memory{
-    background: #2196F3;
-}
-.memory:hover{
-    background: #1e88e5;
-}
-.memory:active{
-    background: #1976d2;
-}   
-
-button{
-    box-shadow: 0 4px #999;
-}
-button:active{
-    box-shadow: 0 2px #666;
-    transform: translateY(2px);
-}
-button:disabled{
-    box-shadow: none;
-    transform: none;
-}
-button.operator{
-    background: #ff9800;
-}
-button.operator:hover{
-    background: #fb8c00;
-}
-button.operator:active{
-    background: #f57c00;
-}
-
-button.equal{
-    background: #4CAF50;
-}
-button.equal:hover{
-    background: #45a049;
-}
-button.equal:active{
-    background: #3e8e41;
-}
-button.clear{
-    background: #f44336;
-}
-button.clear:hover{
-    background: #e53935;
-}
-button.clear:active{
-    background: #d32f2f;
-}   
-button.memory{
-    background: #2196F3;
-}
-button.memory:hover{
-    background: #1e88e5;
-    
