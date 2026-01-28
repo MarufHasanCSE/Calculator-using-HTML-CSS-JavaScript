@@ -1,29 +1,30 @@
+let inputField = document.getElementById("inputField");;
+let buttons = document.querySelectorAll("button");
+let input = "";
 
-// lets add some functionality next
-console.log("Calculator script loaded");
-
-function add(a, b) {
-    return a + b;
-}
-
-function subtract(a, b) {
-    return a - b;
-}   
-function multiply(a, b) {
-    return a * b;
-}
-function divide(a, b) {
-    if (b === 0) {
-        console.error("Cannot divide by zero");
-        return null;
-    }
-    return a / b;
-}
-
-
-
-
-
+buttons.forEach((button) => {
+    button.addEventListener("click", (ev) => {
+        if (ev.target.innerText == "=") {
+            try {
+                input = eval(input);
+                inputField.value = input;
+            }
+            catch (error) {
+                inputField.value = "Error";
+            }
+        } else if (ev.target.innerText == "AC") {
+            input = "";
+            inputField.value = input;
+        } else if (ev.target.innerText == "DEL") {
+            input = input.slice(0, -1);
+            inputField.value = input;
+        } 
+        else {
+            input += ev.target.innerText;
+            inputField.value = input;
+        }
+    });
+});
 
 
 
